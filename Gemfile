@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 
 gem 'sass-rails'
-
+gem 'git'
 gem 'sucker_punch', '~> 1.0'
 
 gem 'rails-assets-highlightjs'
