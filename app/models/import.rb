@@ -22,6 +22,7 @@ class Import < ActiveRecord::Base
       Dir.mktmpdir("mumuki.#{id}.import") do |dir|
         git_clone_into dir
         log = run_import_from_directory! dir
+        update_authors! dir
       end
       [log.to_s, :passed]
     end
@@ -30,6 +31,10 @@ class Import < ActiveRecord::Base
 
   def schedule_run_import!
     ImportGuideJob.run_async(id)
+  end
+
+  def update_authors!(dir)
+    Git.open(dir).log.map(:email).uniq
   end
 
   private
