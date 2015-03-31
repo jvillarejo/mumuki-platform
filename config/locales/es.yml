@@ -138,6 +138,7 @@ es:
   stats: "Algunos números"
   guide_has_exercises_stats: "Esta guía tiene <strong>%{total} ejercicios </strong>"
 
+  filter_by_language: 'Filtrar por lenguaje'
 
   expectation_HasBinding: "%{binding} debe estar definido"
   expectation_HasGuards: "%{binding} debe usar guardas"

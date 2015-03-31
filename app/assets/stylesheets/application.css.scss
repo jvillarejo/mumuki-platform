@@ -93,3 +93,24 @@
 .actions {
   text-align: right;
 }
+
+.language-filters { 
+  ul {
+    padding-left: 0px;
+  }
+
+  img { 
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  ul li {
+    margin-top: 15px;
+    
+    list-style: none;
+    font-weight: bold;
+    input[type=checkbox] { 
+      margin-right: 10px;
+    }
+  }
+}

@@ -71,6 +71,8 @@ en:
   no_exercises: "Nobody created an exercise for this search yet. <a href=\"%{create_path}\">Be the first!</a>"
   no_guides: "Nobody created a guide for this search yet. <a href=\"%{create_path}\">Be the first!</a>"
 
+  filter_by_language: 'Filter by Language'
+  
   exercise_count: "exercises"
   no_submissions: "Its seems like you haven't tried to solve this exercise"
   output: "Output"

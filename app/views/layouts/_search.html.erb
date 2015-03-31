@@ -32,6 +32,23 @@
         </div>
 
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="language-filters">
+            <h4><%= t(:filter_by_language) %></h4>
+            <ul>
+              <% Language.all.each do |l| %>
+                <li>
+                  <label class="language"><input type="checkbox" value="<%= l.name %>" />
+                    <%= image_tag l.image_url %>
+                    <%= l.name.titleize %>
+                  </label>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="col-md-9">
